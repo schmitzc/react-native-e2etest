@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Building"
+cd android
+./gradlew assembleRelease
+
+echo "Testing"
+cd ..
+yarn run test:e2e:android

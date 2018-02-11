@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Building"
+yarn run ios --configuration Release
+
+echo "Testing"
+yarn run test:e2e:ios
